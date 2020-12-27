@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリ名
 
-Things you may want to cover:
+mini-sns
 
-* Ruby version
+# URL
+Herokuによるデプロイ
+https://mini-sns-1227.herokuapp.com/
 
-* System dependencies
+# 説明
 
-* Configuration
+新規登録時に、SNS認証（Facebook・Googleアカウント）を利用して登録することができます。また、SNS認証で新規登録する際は、パスワードが自動生成され、ユーザーがパスワードを入力しなくて済むようになっています。
 
-* Database creation
 
-* Database initialization
+# テーブル設計
 
-* How to run the test suite
+## users テーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+| Column             | Type   | Options     |
+| :----------------- | :----- | :-----------|
+| nickname           | string | null: false |
+| lastname           | string | null: false |
+| firstname          | string | null: false |
+| birthday           | string | null: false |
+| email              | string | null: false |
+| encrypted_password | string | null: false |
 
-* Deployment instructions
 
-* ...
+
+
+
