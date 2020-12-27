@@ -26,6 +26,19 @@ https://mini-sns-1227.herokuapp.com/
 | email              | string | null: false |
 | encrypted_password | string | null: false |
 
+## Association
+- has_many :sns_credentials
+
+## sns_credentials テーブル
+
+| Column    | Type       | Options           |
+| :-------- | :--------- | :-----------------|
+| provider  | string     |                   |
+| uid       | string     |                   |
+| user      | references | foreign_key: true |
+
+## Association
+- belongs_to :user
 
 
 
