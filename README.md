@@ -43,6 +43,14 @@ https://mini-sns-1227.herokuapp.com/
 ## Association
 - belongs_to :user
 
-
+# clone
+```
+% git clone https://github.com/erika618/mini_sns.git
+% cd mini_sns
+% bundle install
+% yarn install
+% rails db:create
+% rails db:migrate
+```
 
 
